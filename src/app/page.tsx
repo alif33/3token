@@ -19,7 +19,7 @@ import Roadmap from "@/components/Roadmap"
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-[#060606] overflow-x-hidden">
       <Header/>
       <Hero/>
       <Edge/>
@@ -40,6 +40,6 @@ export default function Home() {
       <Roadmap/>
       <Divider/>
       <Footer/>
-    </>
+    </div>
   );
 }
