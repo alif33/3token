@@ -68,10 +68,19 @@ html, body, button, input, textarea {
   background-size: 500px;
 }
 
-
-.mission-card:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2);
+.bg-cards {
+  background-size: 100% 90%;
 }
+
+/* .revenue-card {
+  transition: all 0.3s;
+} */
+
+/* .revenue-card:hover {
+  width: 356px;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  cursor: pointer;
+} */
 
 .base-shadow {
   box-shadow: 0 0 11px rgba(33,33,33,.2);

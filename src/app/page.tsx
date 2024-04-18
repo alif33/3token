@@ -28,6 +28,7 @@ export default function Home() {
       <Mission/>
       <Divider/>
       <Utility/>
+      <Divider/>
       <ProtocolStack/>
       <Divider/>
       <RevenueModel/>

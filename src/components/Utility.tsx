@@ -34,11 +34,11 @@ const Utility: React.FC = () => {
                         <li>Universal Compute: Enables scalable compute, adaptable to any hardware or GPU setup</li>
                     </ol>
                 </div>
-                <div className="relative min-w-[372px] min-h-[286px]">
+                <div className="relative min-w-[200px] min-h-[170px]">
                     <Image
-                        width={372}
-                        height={286}
-                        className="absolute -top-12"
+                        width={200}
+                        height={170}
+                        className="absolute -top-8"
                         src="/3Tokens/navigator.png"
                         alt="Line navigator"
                     />
