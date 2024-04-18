@@ -5,10 +5,22 @@ import Link from "next/link"
 const Edge: React.FC = () => {
  
     return (
-       <div className="flex justify-between text-white pl-20">
+       <div className="relative flex justify-between text-white pl-20">
+            <div className="absolute top-1 left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <Image
+                    height={500}
+                    width={800}
+                    src="/3Tokens/about.svg"
+                    alt=""
+                />
+            </div>
             <div className="w-[60%] pt-28">
-                <h3 className="DM-mono font-medium text-lg opacity-60">OUR EDGE: </h3>
-                <h2 className="ClashDisplay text-[48px] leading-[52px] my-[6px]">Agent &nbsp;trading &nbsp;for <br /> named &nbsp;digital &nbsp;assets</h2>
+                {/* [length:505px_184px] */}
+                {/* <div className="bg-[url('/3Tokens/about.svg')] bg-cover bg-no-repeat inset-0"> */}
+                    <h3 className="DM-mono font-medium uppercase text-lg opacity-60">OUR EDGE: </h3>
+                    <h2 className="ClashDisplay text-[48px] leading-[52px] my-[6px]">Agent &nbsp;trading &nbsp;for <br /> named &nbsp;digital &nbsp;assets</h2>
+                {/* </div> */}
+               
                 <h5 className="fira-mono text-lg opacity-60">Backed by Polkadot Web3 Foundation</h5>
 
                 <div className="text-base DM-mono pt-6">

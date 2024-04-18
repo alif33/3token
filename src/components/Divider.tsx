@@ -4,7 +4,7 @@ import Image from "next/image"
 const Divider: React.FC = () => {
  
     return (
-       <div>
+       <div className="flex justify-center py-[64px]">
          <Image
             height={202}
             width={1248}
