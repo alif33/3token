@@ -56,13 +56,12 @@ html, body, button, input, textarea {
   background-size: 50%, 10%; 
 }
 
-.bg-home-right {
-  background-image: url('/landingPage/right-dot.svg');
+.edge-right {
+  background-image: url('/3Tokens/edge-circle.png');
   background-position: top right;
   background-repeat: no-repeat; 
   background-size: cover; 
-  /* width: 100px;
-  height: 100px; */
+  background-size: 500px;
 }
 
 
