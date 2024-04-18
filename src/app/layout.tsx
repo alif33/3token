@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "3Token | 3NS",
-  description: "3Token Name Stack for Ai Agent HFT",
+  description: "Name Stack for HFT Digital Asset Agents (HFT) Powered by 3Token",
 };
 
 export default function RootLayout({
