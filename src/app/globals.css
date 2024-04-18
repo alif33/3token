@@ -2,32 +2,185 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fira+Mono:wght@400;500;700&family=Montserrat:wght@400;700display=swap');
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplayRegular.otf') format('truetype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'ClashDisplayBold';
+  src: url('/fonts/ClashDisplayBold.otf') format('truetype');
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+html, body, button, input, textarea {
+  font-family: 'Inter', sans-serif;
 }
+
+.montserrat{ 
+  font-family: "Montserrat", sans-serif;
+}
+
+.fira-mono {
+  font-family: "Fira Mono", monospace;
+}
+
+.DM-mono {
+  font-family: "DM Mono", monospace;
+}
+
+.font-actor {
+  font-family: "Actor", sans-serif;
+}
+
+.ClashDisplay {
+  font-family: ClashDisplay;
+}
+
+.ClashDisplayBold {
+  font-family: ClashDisplayBold;
+}
+
+.response-message {
+  @apply bg-[#F2F2F2] p-3 rounded-lg;
+}
+
+
+.bg-multi {
+  background-image: url('/base/bg-bottom.svg'), url('/base/bg-right.svg');
+  background-position: bottom center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50%, 10%; 
+}
+
+.bg-home-right {
+  background-image: url('/landingPage/right-dot.svg');
+  background-position: top right;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  /* width: 100px;
+  height: 100px; */
+}
+
+
+.mission-card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.base-shadow {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.smart-card {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.smart-card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .from-custom-purple {
+    --gradient-from-color: #322CFF;
+    background-color: var(--gradient-from-color);
+  }
+  .to-custom-pink {
+    --gradient-to-color: #F837AB;
+    background-color: var(--gradient-to-color);
+  }
+  .bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--gradient-from-color), var(--gradient-to-color));
+  }
+  /* .border-gradient {
+    border-image: linear-gradient(to right, var(--gradient-from-color), var(--gradient-to-color)) 1;
+  } */
+
+  .border-gradient {
+    border: double 1px transparent;
+    border-image: linear-gradient(to right, #322CFF, #F837AB) 1;
+    border-radius: 9999px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
   }
 }
+
+
+
+
+
+@layer components {
+
+  /* Style for the entire header container that includes logo and nav links */
+  .header-container {
+    @apply bg-gray-100 rounded-xl border-2 border-gray-800;
+  }
+
+  .header-logo {
+    @apply h-12 w-10; 
+  }
+
+  /* Define specific styles for navigation links */
+  .nav-link {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 500;
+    font-size: 14px; 
+    color: #5B5B5B; 
+    padding: 50px;
+    border-radius: 5px; 
+    transition: color 0.3s ease; 
+  }
+
+  .nav-link:hover {
+    color: #555; 
+  }
+
+  .domain-registration-text {
+    color: #777777; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400; 
+    font-size: 16px; 
+  }
+
+  /* Styling for the search bar */
+  .search-bar {
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(to right, #2F75FF, #FF5EB0);
+    padding: 2px;
+    height: 60px;
+  }
+
+  .search-bar-inner {
+    background: white;
+    border-radius: 28px;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Styling for the search icon */
+  .search-icon {
+    position: absolute; 
+    top: 50%; 
+    right: 20px;
+    transform: translateY(-50%); 
+    background-color: #2F75FF; 
+    border-radius: 50%; 
+    padding: 10px; 
+    color: white; 
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer;
+  }
+
+  /* Styling for the search text */
+  .search-text {
+    color: #777777; 
+    font-weight: 600;
+    font-family: 'Inter', sans-serif; 
+  }
+}
+
