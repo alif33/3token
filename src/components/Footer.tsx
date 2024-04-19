@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             {/* FAQ's */}
             <div>
                 <div className="w-[700px] mx-auto bg-[url('/3Tokens/faqs.png')] bg-[length:505px_184px] bg-center bg-no-repeat inset-0">
-                    <h2 className="text-5xl text-center py-14">Frequently Asked Questions</h2>
+                    <h2 className="ClashDisplay text-[48px] leading-[52px] my-[6px]">Frequently Asked Questions</h2>
                 </div>
                 <div className="bg-[url('/3Tokens/half-shadow.png')] bg-[length:744px_837px] bg-center bg-no-repeat inset-0 pb-40">
                     <ul>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                             return(
                                 <li className="pt-14" key={index}>
                                     <div className="flex justify-between">
-                                        <h1 className="DM-mono text-2xl">What is 3NS.ai</h1>
+                                        <h1 className="DM-mono text-base font-light">What is 3NS.ai</h1>
                                         <span>
                                             <Image
                                                 height={48}
