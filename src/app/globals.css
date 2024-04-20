@@ -72,15 +72,9 @@ html, body, button, input, textarea {
   background-size: 100% 90%;
 }
 
-/* .revenue-card {
-  transition: all 0.3s;
-} */
-
-/* .revenue-card:hover {
-  width: 356px;
-  box-shadow: 0 0 11px rgba(33,33,33,.2);
-  cursor: pointer;
-} */
+.faqs p{
+  padding: 10px 0px;
+}
 
 .base-shadow {
   box-shadow: 0 0 11px rgba(33,33,33,.2);

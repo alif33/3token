@@ -1,8 +1,16 @@
-import React from "react"
+"use client"
+import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import Faq from "./Faq"
+import { faqs } from "@/const"
 
 const Footer: React.FC = () => {
+    const [isOpen, setIsOpen] = useState<number>(faqs.length)
+
+    const handleOpen = (ind: number)=>{        
+        ind!==isOpen? setIsOpen(ind):  setIsOpen(faqs.length)
+    }
     const socials = [
         { uri: "/icons/twitter.svg", height: 20 , width: 22, alt: "Twitter icon"},
         { uri: "/icons/discord.svg", height: 20 , width: 22, alt: "Discord icon"},
@@ -15,6 +23,7 @@ const Footer: React.FC = () => {
         { uri: "/icons/instagram.svg", height: 20 , width: 22, alt: "Instagram icon"},
     ]
  
+
     return (
         <div className="text-white px-14">
             {/* FAQ's */}
@@ -23,25 +32,16 @@ const Footer: React.FC = () => {
                     <h2 className="ClashDisplay text-[48px] leading-[52px] my-[6px]">Frequently Asked Questions</h2>
                 </div>
                 <div className="bg-[url('/3Tokens/half-shadow.png')] bg-[length:744px_837px] bg-center bg-no-repeat inset-0 pb-40">
-                    <ul>
-                        {[1,2,3,4,5,6].map((item, index)=>{
-                            return(
-                                <li className="pt-14" key={index}>
-                                    <div className="flex justify-between">
-                                        <h1 className="DM-mono text-base font-light">What is 3NS.ai</h1>
-                                        <span>
-                                            <Image
-                                                height={48}
-                                                width={48}
-                                                src="/icons/arrow-down.svg"
-                                                alt="arrow down"
-                                            />
-                                        </span>
-                                    </div>
-                                    <hr className="border border-[#ACABAB]" />
-                                </li>
-                            )
-                        })}
+                    <ul className="faqs">
+                        {faqs.map((item, index)=><Faq 
+                            key={index}
+                            index={index}
+                            size={faqs.length} 
+                            title={item.title} 
+                            description={item.description}
+                            isOpen={isOpen}
+                            handleOpen={handleOpen}
+                        />)}
                         
                     </ul>
                 </div>
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
 
                 </div>
                 <div>
-                    <h5>Copyright © 2024 3NS.ai</h5>
+                    <h5>Copyright © 2024 <a href="https://www.3ns.ai/" target="_blank">3NS.AI</a></h5>
                 </div>
             </div>
     </div>
