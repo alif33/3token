@@ -5,7 +5,7 @@ import Link from "next/link"
 const Edge: React.FC = () => {
  
     return (
-       <div id="About" className="relative flex flex-col md:flex-row items-center justify-between  text-white px-20 md:px-0 md:pl-20">
+       <div id="About" className="relative flex flex-col md:flex-row items-center justify-between  text-white px-5 md:px-0 md:pl-20">
             <div className="absolute top-1 left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
                     height={500}
