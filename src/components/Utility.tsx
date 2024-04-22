@@ -4,7 +4,7 @@ import Image from "next/image"
 const Utility: React.FC = () => {
  
     return (
-        <div id="3Token" className="text-white px-10">
+        <div id="3Token" className="text-white px-5 md:px-10">
             <div className="w-full md:w-[60%] text-center mx-auto">
                 <h5 className="DM-mono font-medium uppercase text-lg opacity-60">3NS.AI TASK-BASED DePIN tierED ARCHITECTURE</h5>
                 <h2 className="ClashDisplay text-[48px] leading-[52px] my-[6px]">3Token Utility</h2>
