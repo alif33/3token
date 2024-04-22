@@ -9,7 +9,7 @@ const AgentEconomics: React.FC = () => {
             <div className="w-[80%] mx-auto text-center pt-3">
                 <h6 className="DM-mono text-base font-light">Access a wide array of new revenue streams from your high-frequency trading Ai-Agents.</h6>
             </div>
-            <div className="flex flex-col md:flex-row justify-center gap-7 mt-[64px]">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-7 mt-[64px]">
                 {/* Card 1 */}
                 <div className="flex revenue-card flex-col justify-between w-[348px] bg-[#171717] py-7 px-11 rounded-xl gap-9">
                     <h5 className="DM-mono text-lg font-medium uppercase opacity-50">Agent</h5>
