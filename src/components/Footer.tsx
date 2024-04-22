@@ -27,9 +27,12 @@ const Footer: React.FC = () => {
         <div className="text-white px-5 md:px-14">
             {/* FAQ's */}
             <div>
-                <div className="w-[700px] mx-auto bg-[url('/3Tokens/faqs.png')] bg-[length:505px_184px] bg-center bg-no-repeat inset-0">
+                {/* Lg */}
+                <div className="hidden md:block w-[700px] mx-auto bg-[url('/3Tokens/faqs.png')] bg-[length:505px_184px] bg-center bg-no-repeat inset-0">
                     <h2 className="ClashDisplay text-[48px] text-center leading-[52px] my-[6px]">Frequently Asked Questions</h2>
                 </div>
+                {/* Md */}
+                <h2 className="block md:hidden ClashDisplay text-[48px] text-center leading-[52px] my-[6px]">Frequently Asked Questions</h2>
                 <div className="bg-[url('/3Tokens/half-shadow.png')] bg-[length:744px_837px] bg-center bg-no-repeat inset-0 pb-40">
                     <ul className="faqs">
                         {faqs.map((item, index)=><Faq 
