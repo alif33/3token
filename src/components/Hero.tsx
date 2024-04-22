@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
  
     return (
         <div>
-            <div className="flex justify-between py-0 md:py-9 pl-20">
+            <div className="flex justify-between py-0 md:py-9 pl-5 md:pl-20">
                 <div className="text-white mt-28">
                     <h4 className="text-lg DM-mono opacity-60">Name Stack for HFT Digital Asset Agents</h4>
                     <div className="py-6">
