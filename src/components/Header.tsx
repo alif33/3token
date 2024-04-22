@@ -14,7 +14,7 @@ const Header: React.FC = () => {
                  alt="site logo"
                 />
             </div>
-            <div>
+            <div className="hidden md:block">
                 <ul className="fira-mono font-medium flex items-center gap-9">
                     <li><a className="px-5" href="#About">About</a></li>
                     <li><a className="px-5" href="#3Token">3Token</a></li>
