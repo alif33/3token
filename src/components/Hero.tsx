@@ -7,9 +7,9 @@ const Hero: React.FC = () => {
         <div>
             <div className="flex justify-between py-0 md:py-9 pl-5 md:pl-20">
                 <div className="text-white mt-28">
-                    <h4 className="text-lg DM-mono opacity-60">Name Stack for HFT Digital Asset Agents</h4>
+                    <h4 className="text-lg DM-mono opacity-60">Name Stack for Web3 Agents</h4>
                     <div className="py-6">
-                        <h1 className="ClashDisplay text-[55px] leading-[58px]">Agent powered <br /> high frequency trading (HFT)</h1>
+                        <h1 className="ClashDisplay text-[55px] leading-[58px]">Web3 Powered by <br className="hidden md:block"/> Smart Agents</h1>
                     </div>
                     <h5 className="text-lg fira-mono opacity-60">Powered by 3Token</h5>
                 </div>
