@@ -5,7 +5,7 @@ const Utility: React.FC = () => {
  
     return (
         <div id="3Token" className="text-white px-10">
-            <div className="w-[60%] text-center mx-auto">
+            <div className="w-full md:w-[60%] text-center mx-auto">
                 <h5 className="DM-mono font-medium uppercase text-lg opacity-60">3NS.AI TASK-BASED DePIN tierED ARCHITECTURE</h5>
                 <h2 className="ClashDisplay text-[48px] leading-[52px] my-[6px]">3Token Utility</h2>
                 <h5 className="DM-mono text-base font-light">The 3Token provides agent-powered automated high-frequency trading by facilitating transactions, incentivizing AI model contributions, and ensuring governance across all tiers.</h5>
@@ -34,6 +34,7 @@ const Utility: React.FC = () => {
                         <li>Universal Compute: Enables scalable compute, adaptable to any hardware or GPU setup</li>
                     </ol>
                 </div>
+                {/* Image in the middle */}
                 <div className="relative min-w-[200px] min-h-[170px]">
                     <Image
                         width={200}
