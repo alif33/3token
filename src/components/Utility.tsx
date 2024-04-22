@@ -13,7 +13,7 @@ const Utility: React.FC = () => {
             {/* Single one */}
             <div className="flex justify-center pt-12">
                 {/* Card 1 */}
-                <div className="bg-[#1E1E1E] bg-[url('/3Tokens/hexa.png')] bg-no-repeat bg-cover inset-0 z-50 w-[336px] h-[350px] text-white p-5 rounded-3xl">
+                <div className="bg-[#1E1E1E] bg-[url('/3Tokens/hexa.png')] bg-no-repeat bg-cover inset-0 z-50 w-[336px] h-[370px] md:h-[350px] text-white p-5 rounded-3xl">
                     <h1 className="fira-code text-[28px] text-2xl font-bold">Tier 1: Agent</h1>
                     <ol className="DM-mono flex flex-col text-base leading-6  list-decimal list-inside mt-7 gap-[6px]">
                         <li>Modularized Models (Lego Bricks): Equips agents with flexible choice of models.</li>
