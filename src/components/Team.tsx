@@ -20,7 +20,7 @@ const Team: React.FC = () => {
                     <h5 className="DM-mono text-base font-light">We have been working on the solution since late 2022 and are led by Ashley Turing (lead AI/Web3 engineer), Dr. Jamie Ward, (distinguished Machine Learning lecturer from University of London, UK) and Ismail Malik, (Web3/AI thought leader) and team of 75+ researchers</h5>
                 </div>
             </div>
-            <div className="flex flex-col lg:flex-row justify-between">
+            <div className="flex flex-col lg:flex-row items-center justify-between">
                 <div className="w-[296px] h-[386px] border border-[#282828] rounded-xl">
                     <Image
                         height={287}
