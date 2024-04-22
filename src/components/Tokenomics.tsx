@@ -4,7 +4,7 @@ import Image from "next/image"
 const Tokenomics: React.FC = () => {
 
     return (
-        <div className="text-white px-14">
+        <div id="Tokenomics" className="text-white px-14">
             <div className="bg-[url('/3Tokens/tokenomics.png')] bg-custom-bg bg-no-repeat bg-cover inset-0">
                 <h2 className="ClashDisplay text-[48px] text-center leading-[52px] py-14">Tokenomics</h2>
             </div>

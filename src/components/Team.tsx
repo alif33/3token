@@ -4,7 +4,7 @@ import Image from "next/image"
 const Team: React.FC = () => {
  
     return (
-        <div className="relative text-white px-14">
+        <div id="Team" className="relative text-white px-14">
             <div className="absolute top-2 right-0">
                 <Image
                     width={995}
@@ -16,7 +16,7 @@ const Team: React.FC = () => {
             {/* className="bg-[url('/3Tokens/our-team.png')] bg-custom-bg bg-no-repeat bg-cover inset-0" */}
             <div>
                 <h1 className="ClashDisplay text-[48px] leading-[52px]">Our Team</h1>
-                <div className="w-[35%] py-7">
+                <div className="w-full md:w-[35%] py-7">
                     <h5 className="DM-mono text-base font-light">We have been working on the solution since late 2022 and are led by Ashley Turing (lead AI/Web3 engineer), Dr. Jamie Ward, (distinguished Machine Learning lecturer from University of London, UK) and Ismail Malik, (Web3/AI thought leader) and team of 75+ researchers</h5>
                 </div>
             </div>

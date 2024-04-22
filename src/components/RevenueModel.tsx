@@ -11,7 +11,7 @@ const RevenueModel: React.FC = () => {
             <div className="w-[80%] mt-6 text-center mx-auto">
                 <h6 className="DM-mono text-base font-light">Users control their data and earn through agent facilitated transactions, while businesses access high-quality, user-consented information. The staked data and commission-based model generates revenue and drives consistent buy pressure for the 3Token (3NS).</h6>
             </div>
-            <div className="flex justify-center gap-7 pt-20">
+            <div className="flex flex-col md:flex-row justify-center gap-7 pt-20">
                 {/* Card 1 */}
                 <div className="flex revenue-card flex-col justify-between w-[348px] bg-[#171717] py-7 px-11 rounded-xl gap-9">
                     <h5 className="DM-mono text-lg font-medium uppercase opacity-50">Staked</h5>

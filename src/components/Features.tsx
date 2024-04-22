@@ -8,7 +8,7 @@ const Features: React.FC = () => {
             <div className="bg-[url('/3Tokens/unique.png')] bg-custom-bg bg-no-repeat bg-cover inset-0 mb-14">
                 <h1 className="ClashDisplay text-[48px] text-center leading-[52px] my-[6px]">Features</h1>
             </div>
-            <div className="flex flex-col md:flex-row justify-center gap-12">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-12">
                 {/* Card 1 */}
                 <div className="relative w-[324px] h-[284px]">
                     <Image
@@ -46,7 +46,7 @@ const Features: React.FC = () => {
                     <h5 className="DM-mono text-center opacity-80 leading-6">3Tokens are vital for advancing AI-Agent intelligence, providing access to curated datasets and computational resources essential for training.</h5>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-center gap-12">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-12">
                 
                 {/* Card 4 */}
                 <div className="relative w-[324px] h-[284px]">

@@ -16,12 +16,12 @@ const Header: React.FC = () => {
             </div>
             <div>
                 <ul className="fira-mono font-medium flex items-center gap-9">
-                    <li><Link className="px-5" href="/">About</Link></li>
-                    <li><Link className="px-5" href="/">3Token</Link></li>
-                    <li><Link className="px-5" href="/">Name Stack</Link></li>
-                    <li><Link className="px-5" href="/">Tokenomics</Link></li>
-                    <li><Link className="px-5" href="/">Team</Link></li>
-                    <li><Link className="px-5" href="/">Roadmap</Link></li>
+                    <li><a className="px-5" href="#About">About</a></li>
+                    <li><a className="px-5" href="#3Token">3Token</a></li>
+                    <li><a className="px-5" href="#NameStack">Name Stack</a></li>
+                    <li><a className="px-5" href="#Tokenomics">Tokenomics</a></li>
+                    <li><a className="px-5" href="#Team">Team</a></li>
+                    <li><a className="px-5" href="#Roadmap">Roadmap</a></li>
                 </ul>
             </div>
        </div>

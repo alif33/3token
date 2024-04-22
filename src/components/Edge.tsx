@@ -5,7 +5,7 @@ import Link from "next/link"
 const Edge: React.FC = () => {
  
     return (
-       <div className="relative flex justify-between text-white pl-20">
+       <div id="About" className="relative flex flex-col md:flex-row items-center justify-between  text-white px-20 md:px-0 md:pl-20">
             <div className="absolute top-1 left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
                     height={500}
@@ -14,7 +14,7 @@ const Edge: React.FC = () => {
                     alt=""
                 />
             </div>
-            <div className="w-[60%] pt-28">
+            <div className="w-full md:w-[60%] pt-28">
                 {/* [length:505px_184px] */}
                 {/* <div className="bg-[url('/3Tokens/about.svg')] bg-cover bg-no-repeat inset-0"> */}
                     <h3 className="DM-mono font-medium uppercase text-lg opacity-60">OUR EDGE: </h3>
@@ -29,7 +29,7 @@ const Edge: React.FC = () => {
                     <p className="font-light">We're the first Substrate for decentralized agents to be backed by Polkadot and funded by their <a className="underline" href="https://github.com/w3f/Grant-Milestone-Delivery/pull/1079#issuecomment-1874291680" target="_blank">Web3 Foundation</a>, along with Worldcoin (OpenAI) and Stacks (Bitcoin’s leading L2).</p>
                 </div>
             </div>
-           <div className="min-w-[500px] edge-right">
+           <div className="hidden md:block min-w-[500px] edge-right">
            </div>
        </div>
     );

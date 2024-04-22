@@ -4,7 +4,7 @@ import Image from "next/image"
 const Utility: React.FC = () => {
  
     return (
-        <div className="text-white px-10">
+        <div id="3Token" className="text-white px-10">
             <div className="w-[60%] text-center mx-auto">
                 <h5 className="DM-mono font-medium uppercase text-lg opacity-60">3NS.AI TASK-BASED DePIN tierED ARCHITECTURE</h5>
                 <h2 className="ClashDisplay text-[48px] leading-[52px] my-[6px]">3Token Utility</h2>
@@ -24,7 +24,7 @@ const Utility: React.FC = () => {
             </div>
             {/* Multiple */}
 
-            <div className="flex flex-col lg:flex-row justify-center pt-14 gap-7">
+            <div className="flex flex-col lg:flex-row justify-center items-center pt-14 gap-7">
                 {/* Card 2 */}
                 <div className="bg-[#1E1E1E] bg-[url('/3Tokens/hexa.png')] bg-no-repeat bg-cover inset-0 z-50 w-[336px] h-[350px] text-white p-5 rounded-3xl">
                     <h1 className="fira-code text-[28px] text-2xl font-bold">Tier 0: Data</h1>

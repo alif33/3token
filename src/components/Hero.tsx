@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
  
     return (
         <div>
-            <div className="flex justify-between py-9 pl-20">
+            <div className="flex justify-between py-0 md:py-9 pl-20">
                 <div className="text-white mt-28">
                     <h4 className="text-lg DM-mono opacity-60">Name Stack for HFT Digital Asset Agents</h4>
                     <div className="py-6">
@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
                     </div>
                     <h5 className="text-lg fira-mono opacity-60">Powered by 3Token</h5>
                 </div>
-                <div>
+                <div className="hidden md:block">
                     <Image
                         height={457}
                         width={462}

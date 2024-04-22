@@ -23,7 +23,6 @@ const Footer: React.FC = () => {
         { uri: "/icons/instagram.svg", height: 20 , width: 22, alt: "Instagram icon"},
     ]
  
-
     return (
         <div className="text-white px-14">
             {/* FAQ's */}
@@ -48,9 +47,9 @@ const Footer: React.FC = () => {
             </div>
             <hr className="border-2 border-[#D3D3D3]"/>
             {/* Footer */}
-            <div className="flex py-9 z-50">
-                <div className="basis-7/12">
-                    <div className="w-[60%]">
+            <div className="flex flex-col md:flex-row py-9 z-50 gap-9 md:gap-0">
+                <div className="basis-full md:basis-7/12">
+                    <div className="w-full md:w-[60%]">
                         <h2 className="font-actor text-4xl">Secure your web3 domain space now <span className="text-[#444444]">before its too late.</span></h2>
                         <Link href="/" className="DM-mono flex justify-center items-center border border-white border-opacity-50 w-[179px] h-11 rounded-md mt-7 gap-3">
                             <span>Contact Us</span>
@@ -63,7 +62,7 @@ const Footer: React.FC = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="basis-5/12">
+                <div className="basis-full md:basis-5/12">
                     <div className="flex justify-between">
                         <div className="DM-mono">
                             <h3 className="text-[28px] font-medium">Platform</h3>
@@ -96,7 +95,7 @@ const Footer: React.FC = () => {
             </div>
             {/* Bottom */}
             <hr className="border-2 border-[#D3D3D3]" />
-            <div className="flex justify-between DM-mono py-5">
+            <div className="flex flex-col md:flex-row justify-between DM-mono py-5">
                 <div className="flex gap-9">
                     <h5>All rights reserved.</h5>
                     <h5>Terms</h5>
