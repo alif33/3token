@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
     ]
  
     return (
-        <div className="text-white px-14">
+        <div className="text-white px-5 md:px-14">
             {/* FAQ's */}
             <div>
                 <div className="w-[700px] mx-auto bg-[url('/3Tokens/faqs.png')] bg-[length:505px_184px] bg-center bg-no-repeat inset-0">
